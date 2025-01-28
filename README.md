@@ -18,26 +18,21 @@ Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek ini:
 
 Jika Anda menggunakan Git, clone repositori ini:
 
-```bash
 git clone https://github.com/rezadika11/crud-test
 cd crud-test
 
 # install composer
-```bash
 composer install
 
 # install node npm
-```bash
 npm install
 
 Buka terminal
 
 # jalankan untuk laravel
-```bash
 php artisan server
 
 # jalankan untuk node
-```bash
 npm install
 
 
