@@ -21,12 +21,6 @@ Jika Anda menggunakan Git, clone repositori ini:
 git clone https://github.com/rezadika11/crud-test
 cd crud-test
 
-# install composer
-composer install
-
-# install node npm
-npm install
-
 Buka terminal
 
 # jalankan untuk laravel
