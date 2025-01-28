@@ -95,7 +95,12 @@ class EmployeesController extends Controller
 
         try {
             // Update the department in the database
-            $update = Employees::where('id', $id)->update($validate);
+            $update = Employees::where('id', $id)->update([
+                'name' => $request->name,
+                'salary' => $request->salary,
+                'position' => $request->position,
+                'department_id' => $request->department_id,
+            ]);
 
             return redirect()->route('employees.index')->with('success', 'Employees updated successfully.');
         } catch (\Exception $e) {

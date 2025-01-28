@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->enum('position',['manager','staf','admin']);
+            $table->enum('position',['manager','staff','admin']);
             $table->integer('salary');
             $table->foreignId('department_id')->constrained('departments')->onDelete('cascade');
             $table->timestamps();
